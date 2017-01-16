@@ -1,4 +1,11 @@
-# About
+# Inter Active Lecture Notes
+
+* [About](#about)
+* [Testing, Building, Installing](#testing-building-installing)
+* [Deploying on AWS](#deploying-on-aws)
+* [Additional Resources](#additional-resources)
+
+## About
 
 This is a software for an e-learning application specifically designed
 to target university students with a focus on mathematical content,
@@ -10,7 +17,7 @@ through the KATEX library made by the Khan Academy folks.
 This application is still under development and not all features have
 been implemented yet.
 
-# Testing, Building, Installing
+## Testing, Building, Installing
 
 To build with maven run the following command from the project root:
 
@@ -38,7 +45,7 @@ option:
 
 Replace `<db_host>`, `<db_port>` and, `db_name` by your respective configuration.
 
-# Deploying on AWS
+## Deploying on AWS
 
 This section explains how to push the docker images that were built in with Maven
 to an AWS EC2 Container Registry (e.g. a docker registry). The following
@@ -61,3 +68,12 @@ steps assume that you have installed the `aws` command line tool.
 
         docker push <your_ec2registry>/masterylearning/backend
         docker push <your_ec2registry>/masterylearning/client
+
+## Additional Resources
+
+For additional information please take a look at the respective
+modules:
+
+* [Backend](backend/README.md)
+* [Client](client/README.md)
+* [Documentation](docs/README.md)
