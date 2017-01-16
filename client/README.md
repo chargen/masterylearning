@@ -1,13 +1,28 @@
 # Client Documentation
 
+This is the client module which contains the code for the website that is served to our end users.
+Some might also call this the frontend of our application.
+
+## Deployment
+
+When this module is built with the install phase of Maven, then 
+it will create a Docker image named `masterylearning/client`.
+
+This Docker image is based on the **nginx** web server and include
+ the application files and is configured to work as a
+ reverse-proxy to forward API request to the backend module.
 
 ## Starting the web server:
 
-To start a local development webserver with proxying use:
+During development you will need start a development web
+server that can also work as a revese-proxy, we use
+[ws](https://www.npmjs.com/package/local-web-server) for this.
+
+To start a local development web server with proxying use:
 
     ws -p 8082 -r '/api/*->http://localhost:8080/$1' -d app
 
-You should `cd` into the `client/` folder first.
+Make sure you `cd` into the `client/` folder first.
 
 # angular-seed — the seed for AngularJS apps
 
