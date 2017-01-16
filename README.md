@@ -1,9 +1,9 @@
-# Inter Active Lecture Notes
+# Interactive Lecture Notes
 
 * [About](#about)
+* [Modules](#modules)
 * [Testing, Building, Installing](#testing-building-installing)
 * [Deploying on AWS](#deploying-on-aws)
-* [Additional Resources](#additional-resources)
 
 ## About
 
@@ -16,6 +16,21 @@ through the KATEX library made by the Khan Academy folks.
 
 This application is still under development and not all features have
 been implemented yet.
+
+## Modules
+
+Additional information about this software can be found
+in the individual modules as well as in the documentation:
+
+* [Backend](backend/)
+* [Client](client/)
+* [Documentation](docs/)
+
+The backend module handles access to the database
+and offers REST endpoints for access to the data. The client module
+contains all the code for the website that our end users will see.
+The documentation contains additional information about this application,
+including information about the data model and the REST endpoints.
 
 ## Testing, Building, Installing
 
@@ -68,12 +83,3 @@ steps assume that you have installed the `aws` command line tool.
 
         docker push <your_ec2registry>/masterylearning/backend
         docker push <your_ec2registry>/masterylearning/client
-
-## Additional Resources
-
-For additional information please take a look at the respective
-modules:
-
-* [Backend](backend/README.md)
-* [Client](client/README.md)
-* [Documentation](docs/README.md)
