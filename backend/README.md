@@ -22,7 +22,7 @@ for data serialization.
 This application is containerized for docker with the
 `docker-maven-plugin`.
 
-# Configuration and preparation
+# Configuration and Preparation
 
 The default `datasource` configuration for the MySQL
 database is stored in the 
